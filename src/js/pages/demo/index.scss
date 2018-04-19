@@ -1,0 +1,92 @@
+@import 'src/js/css/base';
+
+$base-color: #1da1f2;
+
+.stickyHeader {
+  position: sticky;
+  flex-direction: row;
+}
+
+.container {
+  background-color: $base-color;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  width:750px;
+}
+
+.line {
+  height:2px;
+  width:700px;
+  background-color: #ffffff;
+}
+
+.demo-list-cell-container {
+  width: 700px;
+  margin-right: 25px;
+}
+
+.demo-list-cell {
+  background-color: #FFFFFF;
+  width: 700px;
+  height: 100px;
+  padding-left: 25px;
+  padding-top: 30px;
+  /*justify-content: center;*/
+  border-bottom-width: 1px;
+  border-bottom-color: #b9b9b9;
+  /*border-bottom-color: #53bbfb;*/
+  border-style: solid;
+  flex-direction: row;
+}
+
+.demo-list-cell-text {
+  /*color: #53bbfb;*/
+  color: #7d7d7d;
+  font-weight: 500;
+  width: 625;
+}
+
+.demo-list-cell-icon {
+  /*color: #53bbfb;*/
+  color: #7d7d7d;
+  font-weight: 500;
+  padding-top: 4px;
+  font-size: 25;
+  width: 50;
+  font-family: iconfont-eros;
+}
+
+
+
+.status-bar {
+  width: 750;
+  height: 40;
+  background-color: $base-color;
+}
+
+.touch-bar {
+  height: 68;
+  width: 750;
+  background-color: $base-color;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.modal-top {
+  align-items: flex-start;
+}
+
+.image {
+  width:550px; 
+  height:550px; 
+  margin-top:300px; 
+  margin-left:100px;
+}
