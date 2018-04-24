@@ -7,6 +7,7 @@ import android.os.Handler;
 import com.benmu.framework.BMWXEnvironment;
 import com.benmu.framework.constant.Constant;
 import com.benmu.framework.constant.WXConstant;
+import com.benmu.framework.constant.WXEventCenter;
 import com.benmu.framework.manager.ManagerFactory;
 import com.benmu.framework.manager.impl.ParseManager;
 import com.benmu.framework.manager.impl.VersionManager;
@@ -57,7 +58,7 @@ public class SplashActivity extends Activity {
         DispatchEventManager dispatchEventManager = ManagerFactory.getManagerService
                 (DispatchEventManager.class);
         WeexEventBean eventBean = new WeexEventBean();
-        eventBean.setKey(WXConstant.WXEventCenter.EVENT_OPEN);
+        eventBean.setKey(WXEventCenter.EVENT_OPEN);
         eventBean.setJsParams(ManagerFactory.getManagerService(ParseManager.class).toJsonString
                 (router));
         eventBean.setContext(this);
