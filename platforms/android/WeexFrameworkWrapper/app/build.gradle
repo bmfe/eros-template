@@ -6,6 +6,7 @@ android {
     flavorDimensions 'default'
     defaultConfig {
         applicationId APPLICATION_ID
+        buildConfigField "String","PAGE_PREFIX" , "\"${APPLICATION_ID}\""
         minSdkVersion 16
         targetSdkVersion 25
         versionCode 1
