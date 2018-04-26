@@ -127,6 +127,25 @@
                 android:launchMode="singleTop"/>
 
 
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="${GETUI_APP_ID}"/>
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="${GETUI_APP_KEY}"/>
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="${GETUI_APP_SECRET}"/>
+
+
+        <receiver
+            android:name="com.benmu.erosplugingt.GTPushReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.${GETUI_APP_ID}"/>
+            </intent-filter>
+        </receiver>
+
 
     </application>
 
