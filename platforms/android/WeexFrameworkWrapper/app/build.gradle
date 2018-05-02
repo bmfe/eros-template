@@ -102,5 +102,5 @@ dependencies {
     })
     compile "com.android.support:support-v4:${PROJECT_SUPPORTLIBVERSION}"
     testCompile 'junit:junit:4.12'
-    compile project(':wxframework')
+    compile 'com.github.bmfe.eros-android-worker:eros-framework:eros_v0.0.1'
 }
