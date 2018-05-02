@@ -1,1 +1,1 @@
-include ':app', ':wxframework', ':sdk', ':nexus', ':ErosPluginAmap'
+include ':app'

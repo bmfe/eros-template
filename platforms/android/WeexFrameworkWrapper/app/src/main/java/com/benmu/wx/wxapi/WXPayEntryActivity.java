@@ -4,10 +4,12 @@ package com.benmu.wx.wxapi;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.benmu.erospluginwxpay.WXApiModule;
+import com.benmu.erospluginwxpay.model.WeChatPayResultModel;
 import com.benmu.framework.BMWXEnvironment;
 import com.benmu.framework.manager.ManagerFactory;
 import com.benmu.framework.manager.impl.dispatcher.DispatchEventManager;
-import com.benmu.framework.model.WeChatPayResultModel;
 import com.tencent.mm.opensdk.constants.ConstantsAPI;
 import com.tencent.mm.opensdk.modelbase.BaseReq;
 import com.tencent.mm.opensdk.modelbase.BaseResp;
@@ -23,7 +25,7 @@ public class WXPayEntryActivity extends Activity implements IWXAPIEventHandler {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        api = BMWXEnvironment.mWXApi;
+        api = WXApiModule.getInstans().getWXApi();
         if (api != null) {
             api.registerApp(BMWXEnvironment.mPlatformConfig.getWechat().getAppId());
             api.handleIntent(getIntent(), this);
@@ -54,6 +56,7 @@ public class WXPayEntryActivity extends Activity implements IWXAPIEventHandler {
             WeChatPayResultModel bean = new WeChatPayResultModel();
             bean.msg = resp.errStr;
             bean.resCode = resp.errCode;
+            bean.status = resp.errCode;
             ManagerFactory.getManagerService(DispatchEventManager.class).getBus().post(bean);
             finish();
         }

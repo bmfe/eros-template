@@ -3,6 +3,7 @@ package com.benmu.wx.wxapi;
 import android.app.Activity;
 import android.os.Bundle;
 
+import com.benmu.erospluginwxpay.WXApiModule;
 import com.benmu.framework.BMWXEnvironment;
 import com.benmu.framework.manager.ManagerFactory;
 import com.benmu.framework.manager.impl.dispatcher.DispatchEventManager;
@@ -31,7 +32,7 @@ public class WXEntryActivity extends WXCallbackActivity implements IWXAPIEventHa
         super.onCreate(savedInstanceState);
         activity = this;
         //注册API
-        IWXAPI mWXApi = BMWXEnvironment.mWXApi;
+        IWXAPI mWXApi = WXApiModule.getInstans().getWXApi();
         if (mWXApi == null) return;
         mWXApi.handleIntent(getIntent(), this);
     }

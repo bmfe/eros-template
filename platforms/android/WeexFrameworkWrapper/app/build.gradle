@@ -102,5 +102,11 @@ dependencies {
     })
     compile "com.android.support:support-v4:${PROJECT_SUPPORTLIBVERSION}"
     testCompile 'junit:junit:4.12'
-    compile project(':wxframework')
+    //eros base
+    compile 'com.github.bmfe.eros-android-worker:eros-framework:eros_v0.0.1'
+    //eros plugin
+    compile 'com.benmu.eros:plugin-amap:1.0.0'
+    compile 'com.benmu.eros:plugin-getui:1.0.0'
+    compile 'com.benmu.eros:plugin-wxpay:1.0.0'
+    compile 'com.benmu.eros:plugin-wxshare:1.0.0'
 }
