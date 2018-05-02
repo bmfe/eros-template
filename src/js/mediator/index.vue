@@ -17,14 +17,10 @@
             }
         },
         methods: {
-            bindEvent () {
-                this.$event.on('refresh', resData => {
-                  this.$router.refresh()
-                })
-            }
+            
         },
         created () {
-            this.bindEvent()
+            
         }
     }
 </script>
