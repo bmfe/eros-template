@@ -14,7 +14,11 @@
 
 ## 使用方法
 
-* 1、clone 此项目 然后切换到 suorce 分支。
-* 2、执行platforms/android/WeexFrameworkWrapper 目录下 install.sh 文件 （下载依赖。）
-* 3、运行项目即可
+* clone 此项目 然后切换到 suorce 分支。
+* 执行platforms/android/WeexFrameworkWrapper 目录下 install.sh 文件 （下载依赖。）
+* 运行项目即可
 
+## 关于插件
+
+* 如果你不想使用某个插件 如：amap 你可以在 app 目录的 build.gradle 里删除 amap 依赖就可以
+> compile project(':ErosPluginAmap') 即 amap 依赖
