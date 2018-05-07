@@ -35,7 +35,7 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.eros
-            manifestPlaceholders=[UMENG_APP_KEY:UMENG_APPKEY,
+            manifestPlaceholders=[
                                   GETUI_APP_ID:GETUI_APPID,
                                   GETUI_APP_KEY:GETUI_APPKEY,
                                   GETUI_APP_SECRET:GETTUI_APPSECRET,
@@ -47,7 +47,7 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.eros
-            manifestPlaceholders=[UMENG_APP_KEY:UMENG_APPKEY,
+            manifestPlaceholders=[
                                   GETUI_APP_ID:GETUI_APPID,
                                   GETUI_APP_KEY:GETUI_APPKEY,
                                   GETUI_APP_SECRET:GETTUI_APPSECRET,
