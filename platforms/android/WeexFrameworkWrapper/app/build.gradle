@@ -13,6 +13,7 @@ android {
         versionName "1.0"
         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions.annotationProcessorOptions.includeCompileClasspath = true
         ndk {
             abiFilters "x86"
             abiFilters "armeabi"
@@ -104,11 +105,12 @@ dependencies {
     compile "com.android.support:support-v4:${PROJECT_SUPPORTLIBVERSION}"
     testCompile 'junit:junit:4.12'
     //eros base
-    compile 'com.githu' +
-            'b.bmfe.eros-android-worker:eros-framework:eros_v0.0.1'
+    implementation 'com.github.bmfe:eros-nexus:0.0.3'
+    implementation 'com.github.bmfe:WeexErosFramework:0.0.4'
+
     //eros plugin
-    compile 'com.benmu.eros:plugin-amap:1.0.0'
-    compile 'com.benmu.eros:plugin-getui:1.0.0'
-    compile 'com.benmu.eros:plugin-wxpay:1.0.0'
-    compile 'com.benmu.eros:plugin-wxshare:1.0.0'
+    implementation 'com.github.bmfe:eros-plugin-android-amap:0.0.1'
+    implementation 'com.github.bmfe:eros-plugin-android-getui:0.0.1'
+    implementation 'com.github.bmfe:eros-plugin-android-wxshare:0.0.1'
+    implementation 'com.github.bmfe:eros-plugin-android-wxpay:0.0.1'
 }
