@@ -6,14 +6,12 @@ import android.os.Handler;
 
 import com.benmu.framework.BMWXEnvironment;
 import com.benmu.framework.constant.Constant;
-import com.benmu.framework.constant.WXConstant;
 import com.benmu.framework.constant.WXEventCenter;
 import com.benmu.framework.manager.ManagerFactory;
 import com.benmu.framework.manager.impl.ParseManager;
 import com.benmu.framework.manager.impl.VersionManager;
 import com.benmu.framework.manager.impl.dispatcher.DispatchEventManager;
 import com.benmu.framework.model.RouterModel;
-import com.benmu.framework.model.TitleModel;
 import com.benmu.framework.model.WeexEventBean;
 import com.benmu.wx.R;
 
