@@ -13,6 +13,7 @@ android {
         versionName "1.0"
         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions.annotationProcessorOptions.includeCompileClasspath = true
         ndk {
             abiFilters "x86"
             abiFilters "armeabi"
@@ -103,5 +104,7 @@ dependencies {
     })
     compile "com.android.support:support-v4:${PROJECT_SUPPORTLIBVERSION}"
     testCompile 'junit:junit:4.12'
-    compile 'com.github.bmfe.eros-android-worker:eros-framework:eros_v0.0.1'
+
+    implementation 'com.github.bmfe:eros-nexus:0.0.3'
+    implementation 'com.github.bmfe:WeexErosFramework:0.0.4'
 }
