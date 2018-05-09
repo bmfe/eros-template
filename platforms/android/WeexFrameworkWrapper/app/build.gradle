@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'eros-revan'
 
 android {
     compileSdkVersion 25
@@ -105,6 +104,6 @@ dependencies {
     compile "com.android.support:support-v4:${PROJECT_SUPPORTLIBVERSION}"
     testCompile 'junit:junit:4.12'
 
-    implementation 'com.github.bmfe:eros-nexus:0.0.3'
-    implementation 'com.github.bmfe:WeexErosFramework:0.0.4'
+    implementation 'com.github.bmfe.eros-nexus:nexus:0.0.6'
+    implementation 'com.github.bmfe:WeexErosFramework:0.0.6'
 }
