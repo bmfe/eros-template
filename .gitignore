@@ -32,7 +32,11 @@ pids
 *.ap_
 wxframework
 sdk
-bmwidget
+ErosPluginAmap
+erosplugingt
+erospluginumeng
+erospluginwxpay
+nexus
 # files for the dex VM
 *.dex
 
