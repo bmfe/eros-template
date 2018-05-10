@@ -10,8 +10,6 @@ rm -r erospluginumeng/
 
 git clone https://github.com/bmfe/WeexErosFramework.git "wxframework" 
 
-git clone https://github.com/bmfe/WeexSDK.git "sdk" 
-
 git clone https://github.com/bmfe/eros-nexus.git "nexus" 
 
 git clone https://github.com/bmfe/eros-plugin-android-amap.git "ErosPluginAmap" 
