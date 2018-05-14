@@ -25,7 +25,7 @@ if [ -e wxframework/ ] || [ -e sdk/ ] || [ -e nexus/ ] || [ -e ErosPluginAmap/ ]
 then
     echo -e "$eros_prefix Start to updating."
     cd wxframework/ && git pull || error_exit 2
-    cd ../sdk/ && git pull || error_exit 3
+    # cd ../sdk/ && git pull || error_exit 3
     cd ../nexus/ && git pull || error_exit 4
     cd ../ErosPluginAmap/ && git pull || error_exit 5
     cd ../erosplugingt/ && git pull || error_exit 6
