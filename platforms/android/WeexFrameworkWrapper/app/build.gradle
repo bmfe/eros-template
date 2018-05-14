@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-//apply plugin: 'eros-revan'
+apply plugin: 'eros-revan'
 
 android {
     compileSdkVersion 25
@@ -95,12 +95,12 @@ dependencies {
     compile "com.android.support:support-v4:${PROJECT_SUPPORTLIBVERSION}"
     testCompile 'junit:junit:4.12'
     //eros base
-    implementation 'com.github.bmfe.eros-nexus:nexus:0.0.6'
-    implementation 'com.github.bmfe:WeexErosFramework:0.0.6'
+    implementation 'com.github.bmfe.eros-nexus:nexus:1.0.0'
+    implementation 'com.github.bmfe:WeexErosFramework:1.0.0'
 
     //eros plugin
-    implementation 'com.github.bmfe:eros-plugin-android-amap:0.0.2'
-    implementation 'com.github.bmfe:eros-plugin-android-getui:0.0.2'
-    implementation 'com.github.bmfe:eros-plugin-android-wxshare:0.0.2'
-    implementation 'com.github.bmfe:eros-plugin-android-wxpay:0.0.2'
+    implementation 'com.github.bmfe:eros-plugin-android-amap:1.0.0'
+    implementation 'com.github.bmfe:eros-plugin-android-getui:1.0.0'
+    implementation 'com.github.bmfe:eros-plugin-android-wxshare:1.0.0'
+    implementation 'com.github.bmfe:eros-plugin-android-wxpay:1.0.0'
 }
