@@ -105,6 +105,6 @@ dependencies {
     compile "com.android.support:support-v4:${PROJECT_SUPPORTLIBVERSION}"
     testCompile 'junit:junit:4.12'
 
-    implementation 'com.github.bmfe.eros-nexus:nexus:1.0.0'
-    implementation 'com.github.bmfe:WeexErosFramework:1.0.0'
+    implementation 'com.github.bmfe.eros-nexus:nexus:1.0.1'
+    implementation 'com.github.bmfe:WeexErosFramework:1.0.1'
 }
