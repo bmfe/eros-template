@@ -102,5 +102,5 @@ dependencies {
     implementation 'com.github.bmfe:eros-plugin-android-amap:1.0.1'
     implementation 'com.github.bmfe:eros-plugin-android-getui:1.0.1'
     implementation 'com.github.bmfe:eros-plugin-android-wxshare:1.0.1'
-    implementation 'com.github.bmfe:eros-plugin-android-wxpay:1.0.1'
+    implementation 'com.github.bmfe:eros-plugin-android-wxpay:1.0.4'
 }
