@@ -17,3 +17,7 @@
 - 不论您是 `weex/vue` 入门新手还是有过项目经验，我们都极力推荐你先 `init` 带有 `demo` 的版本；
 - 如果您已经使用过 `eros` 开发过 app，就可以直接用 `pure` 版本；
 - **如果你想对项目有高度自定义如`修改 weex sdk 源码`, `自定义 eros 相关功能`，`自定义热更新逻辑`等，请直接 `clone` 我们的 `source` 分支**;
+
+source 分支使用：
+
+[https://github.com/bmfe/eros-template/tree/source](https://github.com/bmfe/eros-template/tree/source)
