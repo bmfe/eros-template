@@ -42,7 +42,7 @@ public class SplashActivity extends Activity {
                     public void run() {
                         toHome();
                     }
-                }, 2000 - prepareTime);
+                }, 1500 - prepareTime);
             }
         }).start();
 
