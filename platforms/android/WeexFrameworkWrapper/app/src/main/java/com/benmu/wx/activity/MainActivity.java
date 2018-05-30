@@ -1,7 +1,6 @@
 package com.benmu.wx.activity;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.ViewGroup;
 import android.view.ViewStub;
 import android.widget.FrameLayout;
@@ -13,7 +12,6 @@ import com.benmu.framework.model.RouterModel;
 import com.benmu.framework.model.WeexEventBean;
 import com.benmu.framework.view.TabbleView;
 import com.benmu.wx.R;
-import com.taobao.weex.bridge.JSCallback;
 
 public class MainActivity extends AbstractWeexActivity {
     private FrameLayout layout_container;

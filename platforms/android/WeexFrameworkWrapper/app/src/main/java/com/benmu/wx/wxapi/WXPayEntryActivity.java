@@ -7,7 +7,6 @@ import android.os.Bundle;
 
 import com.benmu.erospluginwxpay.WXApiModule;
 import com.benmu.erospluginwxpay.model.WeChatPayResultModel;
-import com.benmu.framework.BMWXEnvironment;
 import com.benmu.framework.manager.ManagerFactory;
 import com.benmu.framework.manager.impl.dispatcher.DispatchEventManager;
 import com.tencent.mm.opensdk.constants.ConstantsAPI;

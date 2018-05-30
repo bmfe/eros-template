@@ -1,10 +1,8 @@
 package com.benmu.wx.wxapi;
 
-import android.app.Activity;
 import android.os.Bundle;
 
 import com.benmu.erospluginwxpay.WXApiModule;
-import com.benmu.framework.BMWXEnvironment;
 import com.benmu.framework.manager.ManagerFactory;
 import com.benmu.framework.manager.impl.dispatcher.DispatchEventManager;
 import com.tencent.mm.opensdk.modelbase.BaseReq;
@@ -12,7 +10,6 @@ import com.tencent.mm.opensdk.modelbase.BaseResp;
 import com.tencent.mm.opensdk.modelmsg.SendAuth;
 import com.tencent.mm.opensdk.openapi.IWXAPI;
 import com.tencent.mm.opensdk.openapi.IWXAPIEventHandler;
-import com.tencent.mm.opensdk.openapi.WXAPIFactory;
 import com.umeng.weixin.callback.WXCallbackActivity;
 
 /**
