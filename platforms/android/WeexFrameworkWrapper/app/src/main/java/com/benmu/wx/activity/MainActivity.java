@@ -1,26 +1,19 @@
 package com.benmu.wx.activity;
 
-import android.content.Intent;
-import android.graphics.Rect;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.util.Log;
-import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewStub;
-import android.view.ViewTreeObserver;
 import android.widget.FrameLayout;
 
 import com.benmu.framework.BMWXEnvironment;
 import com.benmu.framework.activity.AbstractWeexActivity;
 import com.benmu.framework.constant.Constant;
 import com.benmu.framework.model.RouterModel;
+import com.benmu.framework.model.WeexEventBean;
 import com.benmu.framework.view.TabbleView;
 import com.benmu.wx.R;
-import com.umeng.socialize.UMShareAPI;
-
-import java.lang.reflect.Field;
+import com.taobao.weex.bridge.JSCallback;
 
 public class MainActivity extends AbstractWeexActivity {
     private FrameLayout layout_container;
@@ -51,5 +44,13 @@ public class MainActivity extends AbstractWeexActivity {
         tabbleView = (TabbleView) findViewById(R.id.tabView);
         tabbleView.setData(BMWXEnvironment.mPlatformConfig.getTabBar());
 
+    }
+
+    @Override
+    public boolean navigationListenter(WeexEventBean weexEventBean) {
+        if (tabbleView != null) {
+            return tabbleView.setNaigation(weexEventBean);
+        }
+        return false;
     }
 }
