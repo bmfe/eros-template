@@ -21,6 +21,7 @@ allprojects {
         google()
         mavenCentral()
         maven { url "https://jitpack.io" }
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
     }
 }
 
@@ -28,3 +29,20 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
+
+subprojects {
+    repositories {
+        google()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    }
+    buildscript {
+        repositories {
+            maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        }
+        dependencies {
+            classpath 'com.android.tools.build:gradle:2.3.3'
+            classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.0'
+            classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        }
+    }
+}
