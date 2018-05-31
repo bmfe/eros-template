@@ -45,7 +45,7 @@
 
 
 
-        <activity android:name="com.benmu.wx.activity.MainActivity">
+        <activity android:name="com.benmu.framework.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
 
