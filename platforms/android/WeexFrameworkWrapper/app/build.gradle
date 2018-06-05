@@ -108,7 +108,7 @@ dependencies {
     compile project(':wxframework')
 
     compile project(':erosplugingt')
-    compile project(':ErosPluginAmap')
+//    compile project(':ErosPluginAmap')
     compile project(':erospluginwxpay')
     compile project(':erospluginumeng')
 }
