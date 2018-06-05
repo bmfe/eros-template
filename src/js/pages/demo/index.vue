@@ -7,9 +7,9 @@
             
             <eros-core></eros-core>
             <eros-native></eros-native>
-            <eros-three></eros-three>
             <eros-notice></eros-notice>
             <eros-tools></eros-tools>
+            <eros-three></eros-three>
             
             <eros-expand></eros-expand>
 
@@ -58,13 +58,14 @@ export default {
     },
     beforeCreate: function () {
         var domModule = weex.requireModule('dom');
-
+    
         domModule.addRule('fontFace', {
             fontFamily: 'iconfont-eros',
             'src': 'url(\'bmlocal://iconfont/iconfont-eros.ttf\')'
         });
     },
     created () {
+
         this.$navigator.setNavigationInfo({
             statusBarStyle: 'LightContent'
         });
