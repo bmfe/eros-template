@@ -44,15 +44,9 @@
         >
 
 
-        <meta-data
-            android:name="UMENG_APPKEY"
-            android:value="${UMENG_APP_KEY}"/>
-        <meta-data
-            android:name="UMENG_CHANNEL"
-            android:value="${UMENG_CHANNEL_VALUE}"/>
 
-
-        <activity android:name="com.benmu.wx.activity.MainActivity">
+        <activity android:name="com.benmu.framework.activity.MainActivity"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
 

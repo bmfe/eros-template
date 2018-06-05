@@ -27,7 +27,7 @@ public class WXPayEntryActivity extends Activity implements IWXAPIEventHandler {
         super.onCreate(savedInstanceState);
         api = WXApiModule.getInstans().getWXApi();
         if (api != null) {
-            api.registerApp(BMWXEnvironment.mPlatformConfig.getWechat().getAppId());
+            api.registerApp(WXApiModule.getInstans().getAppId());
             api.handleIntent(getIntent(), this);
         }
     }
