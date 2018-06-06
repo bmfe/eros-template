@@ -105,6 +105,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
     implementation 'com.github.bmfe.eros-nexus:nexus:1.0.3'
-    implementation 'com.github.bmfe:WeexErosFramework:1.0.3'
+    implementation 'com.github.bmfe:WeexErosFramework:1.0.4'
 
 }
