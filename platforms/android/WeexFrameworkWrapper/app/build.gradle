@@ -104,11 +104,17 @@ dependencies {
     })
     compile "com.android.support:support-v4:${PROJECT_SUPPORTLIBVERSION}"
     testCompile 'junit:junit:4.12'
-//    compile project(':nexus')
+
+    //基础库
+    compile project(':nexus')
     compile project(':wxframework')
 
+    //Amap
+    compile project(':erospluginamap')
+    //个推
     compile project(':erosplugingt')
-//    compile project(':ErosPluginAmap')
+    //微信支付
     compile project(':erospluginwxpay')
-    compile project(':erospluginumeng')
+    //分享
+    compile project(':erospluginwxshare')
 }

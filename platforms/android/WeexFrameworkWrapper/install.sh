@@ -18,7 +18,8 @@ git clone https://github.com/bmfe/eros-plugin-android-getui.git "erosplugingt"
 
 git clone https://github.com/bmfe/eros-plugin-android-wxpay.git "erospluginwxpay" 
 
-git clone https://github.com/bmfe/eros-plugin-android-wxshare.git "erospluginumeng" 
+git clone https://github.com/bmfe/eros-plugin-android-wxshare.git "erospluginwxshare" 
+
 cd ../
 
 echo "依赖库更新完成"
