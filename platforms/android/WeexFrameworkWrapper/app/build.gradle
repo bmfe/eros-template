@@ -93,13 +93,16 @@ dependencies {
     })
     compile "com.android.support:support-v4:${PROJECT_SUPPORTLIBVERSION}"
     testCompile 'junit:junit:4.12'
-    //eros base
-    implementation 'com.github.bmfe.eros-nexus:nexus:1.0.3'
-    implementation 'com.github.bmfe:WeexErosFramework:1.0.4'
+    //基础库
+    compile project(':nexus')
+    compile project(':wxframework')
 
-    //eros plugin
-    implementation 'com.github.bmfe:eros-plugin-android-amap:1.1.0'
-    implementation 'com.github.bmfe:eros-plugin-android-getui:1.1.0'
-    implementation 'com.github.bmfe:eros-plugin-android-wxshare:1.1.0'
-    implementation 'com.github.bmfe:eros-plugin-android-wxpay:1.1.0'
+    //Amap
+    compile project(':erospluginamap')
+    //个推
+    compile project(':erosplugingt')
+    //微信支付
+    compile project(':erospluginwxpay')
+    //分享
+    compile project(':erospluginwxshare')
 }
