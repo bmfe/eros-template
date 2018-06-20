@@ -97,12 +97,4 @@ dependencies {
     compile project(':nexus')
     compile project(':wxframework')
 
-    //Amap
-    compile project(':erospluginamap')
-    //个推
-    compile project(':erosplugingt')
-    //微信支付
-    compile project(':erospluginwxpay')
-    //分享
-    compile project(':erospluginwxshare')
 }
