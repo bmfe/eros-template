@@ -3,11 +3,8 @@ package com.benmu.wx.activity;
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.benmu.erosplugingt.manager.GetuiManager;
-import com.benmu.framework.manager.ManagerFactory;
 import com.benmu.framework.proxy.SplashActivityProxy;
 import com.benmu.wx.R;
-import com.plugamap.manager.GeoManager;
 
 /**
  * Created by Carry on 2017/8/23.
