@@ -12,6 +12,7 @@ android {
         versionName "1.0.0"
         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions.annotationProcessorOptions.includeCompileClasspath = true
         ndk {
             abiFilters "x86"
             abiFilters "armeabi"
@@ -34,11 +35,11 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.eros
-            manifestPlaceholders=[UMENG_APP_KEY:UMENG_APPKEY,
-                                  GETUI_APP_ID:GETUI_APPID,
-                                  GETUI_APP_KEY:GETUI_APPKEY,
-                                  GETUI_APP_SECRET:GETTUI_APPSECRET,
-                                  APP_ID:APPLICATION_ID
+            manifestPlaceholders = [
+                    GETUI_APP_ID    : GETUI_APPID,
+                    GETUI_APP_KEY   : GETUI_APPKEY,
+                    GETUI_APP_SECRET: GETTUI_APPSECRET,
+                    APP_ID          : APPLICATION_ID
             ]
         }
 
@@ -46,11 +47,11 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.eros
-            manifestPlaceholders=[UMENG_APP_KEY:UMENG_APPKEY,
-                                  GETUI_APP_ID:GETUI_APPID,
-                                  GETUI_APP_KEY:GETUI_APPKEY,
-                                  GETUI_APP_SECRET:GETTUI_APPSECRET,
-                                  APP_ID:APPLICATION_ID
+            manifestPlaceholders = [
+                    GETUI_APP_ID    : GETUI_APPID,
+                    GETUI_APP_KEY   : GETUI_APPKEY,
+                    GETUI_APP_SECRET: GETTUI_APPSECRET,
+                    APP_ID          : APPLICATION_ID
             ]
         }
 
@@ -65,11 +66,11 @@ android {
 
 
     productFlavors {
-        samplechannel{
+        samplechannel {
             dimension 'default'
         }
 
-        yingyongbao{
+        yingyongbao {
             dimension 'default'
         }
     }
@@ -79,7 +80,7 @@ android {
 
     sourceSets {
         main {
-            jniLibs.srcDirs=['../wxframework/libs']
+            jniLibs.srcDirs = ['../wxframework/libs']
         }
     }
 }
@@ -102,5 +103,8 @@ dependencies {
     })
     compile "com.android.support:support-v4:${PROJECT_SUPPORTLIBVERSION}"
     testCompile 'junit:junit:4.12'
+
+    compile project(':nexus')
     compile project(':wxframework')
+
 }
