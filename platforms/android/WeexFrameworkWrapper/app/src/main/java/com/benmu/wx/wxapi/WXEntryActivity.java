@@ -2,7 +2,7 @@ package com.benmu.wx.wxapi;
 
 import android.os.Bundle;
 
-import com.benmu.erospluginwxpay.WXApiModule;
+import com.benmu.erospluginumeng.model.WXApiModule;
 import com.benmu.framework.manager.ManagerFactory;
 import com.benmu.framework.manager.impl.dispatcher.DispatchEventManager;
 import com.tencent.mm.opensdk.modelbase.BaseReq;
@@ -10,7 +10,7 @@ import com.tencent.mm.opensdk.modelbase.BaseResp;
 import com.tencent.mm.opensdk.modelmsg.SendAuth;
 import com.tencent.mm.opensdk.openapi.IWXAPI;
 import com.tencent.mm.opensdk.openapi.IWXAPIEventHandler;
-import com.umeng.weixin.callback.WXCallbackActivity;
+import com.umeng.socialize.weixin.view.WXCallbackActivity;
 
 /**
  * Created by Dong Fuhai on 2014-07-22 16:42.
@@ -21,8 +21,6 @@ public class WXEntryActivity extends WXCallbackActivity implements IWXAPIEventHa
 
 
     public static WXEntryActivity activity;
-
-    IWXAPI api;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
