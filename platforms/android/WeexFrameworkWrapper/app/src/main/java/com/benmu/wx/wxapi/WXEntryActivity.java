@@ -13,7 +13,7 @@
 //import com.tencent.mm.opensdk.openapi.IWXAPI;
 //import com.tencent.mm.opensdk.openapi.IWXAPIEventHandler;
 //import com.tencent.mm.opensdk.openapi.WXAPIFactory;
-//import com.umeng.weixin.callback.WXCallbackActivity;
+//import com.umeng.socialize.weixin.view.WXCallbackActivity;
 //
 ///**
 // * Created by Dong Fuhai on 2014-07-22 16:42.
