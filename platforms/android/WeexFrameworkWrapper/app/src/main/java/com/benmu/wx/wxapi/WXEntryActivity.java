@@ -3,7 +3,7 @@
 //import android.app.Activity;
 //import android.os.Bundle;
 //
-//import com.benmu.erospluginwxpay.WXApiModule;
+//import com.benmu.erospluginumeng.model.WXApiModule;
 //import com.benmu.framework.BMWXEnvironment;
 //import com.benmu.framework.manager.ManagerFactory;
 //import com.benmu.framework.manager.impl.dispatcher.DispatchEventManager;
