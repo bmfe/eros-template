@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <title>测试</title>
+</head>
+
+<body>
+    <button onclick="closePage()"> 关闭当前页面 </button>
+    <button onclick="fireEvent()"> fireEvent </button>
+</body>
+
+<script>
+    function closePage() {
+        bmnative.closePage();
+    }
+
+    function fireEvent() {
+        bmnative.fireEvent('event', {
+            'name': 'xiaoming'
+        });
+    }
+</script>
+
+</html>>

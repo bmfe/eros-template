@@ -3,6 +3,7 @@ module.exports = {
     'appBoard': '/config/index.js',
     // android 监听全局事件homeBack 如果为true 安卓端需要自行调用router.finish方法来关闭应用
     'androidIsListenHomeBack': 'true',
+    'customBundleUpdate': 'false',
     'version': {
         'android': 'eros-template-version',
         'iOS': 'eros-template-version'
@@ -27,19 +28,35 @@ module.exports = {
         'appKey': '',
         'appSecret': ''
     },
-    'umeng': {
-        'enabled': 'false',
-        'iOSAppKey': '',
-        'androidAppKey': ''
-    },
-    'wechat': {
-        'enabled': 'false',
-        'appId': '',
-        'appSecret': ''
-    },
-    'amap': {
-        'enabled': 'true',
-        'iOSAppKey': '623c0396a9b879461c971a14baa678fb',
-        'androidAppKey': ''
+    'tabBar': {
+        'color': '#777777',
+        'selectedColor': '#00b4cb',
+        'backgroundColor': '#fafafa',
+        'borderColor': '#dfe1eb',
+        'list': [{
+                'pagePath': '/pages/demo/router/tabbarItem1.js',
+                'text': '首页',
+                'icon': 'bmlocal://assets/TabBar_Item1@2x.png',
+                'selectedIcon': 'bmlocal://assets/TabBar_Item1_Selected@2x.png',
+                'navShow': 'true',
+                'navTitle': "首页"
+            },
+            {
+                'pagePath': '/pages/demo/router/tabbarItem2.js',
+                'text': '联系人',
+                'icon': 'bmlocal://assets/TabBar_Item2@2x.png',
+                'selectedIcon': 'bmlocal://assets/TabBar_Item2_Selected@2x.png',
+                'navShow': 'true',
+                'navTitle': '联系人'
+            },
+            {
+                'pagePath': '/pages/demo/router/tabbarItem3.js',
+                'text': '个人中心',
+                'icon': 'bmlocal://assets/TabBar_Item3@2x.png',
+                'selectedIcon': 'bmlocal://assets/TabBar_Item3_Selected@2x.png',
+                'navShow': 'true',
+                'navTitle': '我'
+            }
+        ]
     }
 }

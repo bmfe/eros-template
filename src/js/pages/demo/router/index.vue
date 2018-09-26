@@ -14,12 +14,6 @@
             :has-top-border="true"
             @wxcCellClicked="getUrl">
         </wxc-cell>
-        <wxc-cell title="跳转到地图"
-            desc="$router.toMap()"
-            :has-arrow="true"
-            :has-top-border="true"
-            @wxcCellClicked="toMap">
-        </wxc-cell>
         <wxc-cell title="跳转到 WebView"
             desc="$router.toWebView()"
             :has-arrow="true"
@@ -179,21 +173,9 @@ export default {
                 })
             })
         },
-        toMap () {
-            this.$router.toMap({
-                type: 'NAVIGATION',
-                title: '地图标题',
-                navigationInfo: {
-                    title: '故宫博物院',
-                    address: '北京市东城区景山前街4号',
-                    longitude: '116.397026',
-                    latitude: '39.918058'
-                }
-            })
-        },
         toWebView () {
             this.$router.toWebView({
-                url: 'https://www.baidu.com',
+                url: 'bmlocal://assets/test.html?value=123&vaule2=kdkdkkd',
                 title: 'WebView标题'
             })
         },
@@ -207,13 +189,22 @@ export default {
             this.$router.openBrowser('https://www.baidu.com')
         },
         setHomePage () {
-            this.$router.setHomePage('/pages/demo/router/home.js')
+            this.$router.setHomePage('tabBar')
             this.$notice.toast({
                 message: '设置成功'
             })
         },
         refresh () {
             this.$router.refresh()
+        }
+    },
+    eros :{
+        // 页面周期相关 start 
+        beforeAppear (params, options) {
+            console.log('beforeAppear');
+        },
+        beforeBackAppear (params, options) {
+            console.log('beforeBackAppear');
         }
     }
 }

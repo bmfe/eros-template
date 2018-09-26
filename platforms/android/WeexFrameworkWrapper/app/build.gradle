@@ -9,9 +9,10 @@ android {
         minSdkVersion 16
         targetSdkVersion 25
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions.annotationProcessorOptions.includeCompileClasspath = true
         ndk {
             abiFilters "x86"
             abiFilters "armeabi"
@@ -34,7 +35,7 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.eros
-            manifestPlaceholders=[UMENG_APP_KEY:UMENG_APPKEY,
+            manifestPlaceholders=[
                                   GETUI_APP_ID:GETUI_APPID,
                                   GETUI_APP_KEY:GETUI_APPKEY,
                                   GETUI_APP_SECRET:GETTUI_APPSECRET,
@@ -46,7 +47,7 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.eros
-            manifestPlaceholders=[UMENG_APP_KEY:UMENG_APPKEY,
+            manifestPlaceholders=[
                                   GETUI_APP_ID:GETUI_APPID,
                                   GETUI_APP_KEY:GETUI_APPKEY,
                                   GETUI_APP_SECRET:GETTUI_APPSECRET,
@@ -77,20 +78,10 @@ android {
         flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
     }
 
-    sourceSets {
-        main {
-            jniLibs.srcDirs=['../wxframework/libs']
-        }
-    }
 }
 
 repositories {
     mavenCentral()
-    flatDir {
-
-        dirs '../wxframework/libs', 'libs'
-
-    }
     google()
 }
 
@@ -102,5 +93,8 @@ dependencies {
     })
     compile "com.android.support:support-v4:${PROJECT_SUPPORTLIBVERSION}"
     testCompile 'junit:junit:4.12'
+    //基础库
+    compile project(':nexus')
     compile project(':wxframework')
+
 }
