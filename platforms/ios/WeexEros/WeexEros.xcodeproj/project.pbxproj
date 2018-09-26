@@ -195,15 +195,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WeexEros/Pods-WeexEros-resources.sh",
-				"${PODS_ROOT}/BMBaseLibrary/Source/BMComponent/Calendar/Resources/CalendarLeftArrows@2x.png",
-				"${PODS_ROOT}/BMBaseLibrary/Source/BMComponent/Calendar/Resources/CalendarLeftArrows@3x.png",
-				"${PODS_ROOT}/BMBaseLibrary/Source/BMComponent/Calendar/Resources/CalendarReightArrows@2x.png",
-				"${PODS_ROOT}/BMBaseLibrary/Source/BMComponent/Calendar/Resources/CalendarReightArrows@3x.png",
-				"${PODS_ROOT}/BMBaseLibrary/Source/BMComponent/Chart/Resources/bm-chart.html",
-				"${PODS_ROOT}/BMBaseLibrary/Source/BMComponent/Chart/Resources/echarts.min.js",
-				"${PODS_ROOT}/BMBaseLibrary/Source/BMModule/Modal/SVProgressHUD/SVProgressHUD.bundle",
-				"${PODS_ROOT}/BMBaseLibrary/Source/BMWeexExtension/Resources/arrowInKeyboard@2x.png",
-				"${PODS_ROOT}/BMBaseLibrary/Source/BMWeexExtension/Resources/bm-base.js",
+				"${PODS_ROOT}/ErosPluginBaseLibrary/Source/BMComponent/Calendar/Resources/CalendarLeftArrows@2x.png",
+				"${PODS_ROOT}/ErosPluginBaseLibrary/Source/BMComponent/Calendar/Resources/CalendarLeftArrows@3x.png",
+				"${PODS_ROOT}/ErosPluginBaseLibrary/Source/BMComponent/Calendar/Resources/CalendarReightArrows@2x.png",
+				"${PODS_ROOT}/ErosPluginBaseLibrary/Source/BMComponent/Calendar/Resources/CalendarReightArrows@3x.png",
+				"${PODS_ROOT}/ErosPluginBaseLibrary/Source/BMComponent/Chart/Resources/bm-chart.html",
+				"${PODS_ROOT}/ErosPluginBaseLibrary/Source/BMComponent/Chart/Resources/echarts.min.js",
+				"${PODS_ROOT}/ErosPluginBaseLibrary/Source/BMModule/Modal/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/ErosPluginBaseLibrary/Source/BMWeexExtension/Resources/arrowInKeyboard@2x.png",
+				"${PODS_ROOT}/ErosPluginBaseLibrary/Source/BMWeexExtension/Resources/bm-base.js",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
 				"${PODS_ROOT}/WeexSDK/WeexSDK/Resources/native-bundle-main.js",
@@ -236,9 +236,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WeexEros/Pods-WeexEros-frameworks.sh",
+				"${PODS_ROOT}/PLPlayerKit/Pod/Library/PLPlayerKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PLPlayerKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -400,7 +403,6 @@
 					"$(inherited)",
 					"-ObjC",
 					"-l\"AFNetworking\"",
-					"-l\"BMBaseLibrary\"",
 					"-l\"FSCalendar\"",
 					"-l\"MJRefresh\"",
 					"-l\"Masonry\"",
@@ -470,7 +472,7 @@
 					"-weak_framework",
 					"\"UserNotifications\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.benmu.WeexEros;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eros.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -492,7 +494,6 @@
 					"$(inherited)",
 					"-ObjC",
 					"-l\"AFNetworking\"",
-					"-l\"BMBaseLibrary\"",
 					"-l\"FSCalendar\"",
 					"-l\"MJRefresh\"",
 					"-l\"Masonry\"",
@@ -562,7 +563,7 @@
 					"-weak_framework",
 					"\"UserNotifications\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.benmu.WeexEros;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eros.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
