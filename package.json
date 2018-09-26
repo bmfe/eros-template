@@ -1,0 +1,29 @@
+{
+  "name": "eros",
+  "version": "1.0.0",
+  "description": "Eros can help developers build app quickly.",
+  "main": "index.js",
+  "keywords": [
+    "weex"
+  ],
+  "author": "Zero<a2192466@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bui-weex": "^0.2.5",
+    "eros-widget": "^1.0.2-beta.2",
+    "weex-ui": "^0.6.0beta-2"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-plugin-import": "^1.6.7",
+    "babel-plugin-transform-runtime": "~6.23.0",
+    "babel-preset-env": "~1.5.2",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.22.0",
+    "bindingx-parser": "0.0.x",
+    "eslint": "^4.17.0",
+    "eslint-plugin-html": "^4.0.2",
+    "eslint-plugin-vue": "^4.3.0"
+  }
+}
