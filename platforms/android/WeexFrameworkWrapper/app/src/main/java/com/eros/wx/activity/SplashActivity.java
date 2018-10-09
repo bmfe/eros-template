@@ -1,10 +1,9 @@
-package com.benmu.wx.activity;
+package com.eros.wx.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
-
-import com.benmu.framework.proxy.SplashActivityProxy;
-import com.benmu.wx.R;
+import com.eros.framework.proxy.SplashActivityProxy;
+import com.eros.wx.R;
 
 /**
  * Created by Carry on 2017/8/23.
@@ -19,8 +18,6 @@ public class SplashActivity extends Activity {
         setContentView(R.layout.activity_splash);
         activityProxy = new SplashActivityProxy();
         activityProxy.onCreateInit(this);
-
-
     }
 
     @Override
