@@ -1,10 +1,10 @@
-package com.benmu.wx.wxapi;
+package com.eros.wx.wxapi;
 
 import android.os.Bundle;
 
-import com.benmu.erospluginumeng.model.WXApiModule;
-import com.benmu.framework.manager.ManagerFactory;
-import com.benmu.framework.manager.impl.dispatcher.DispatchEventManager;
+import com.eros.erospluginumeng.model.WXApiModule;
+import com.eros.framework.manager.ManagerFactory;
+import com.eros.framework.manager.impl.dispatcher.DispatchEventManager;
 import com.tencent.mm.opensdk.modelbase.BaseReq;
 import com.tencent.mm.opensdk.modelbase.BaseResp;
 import com.tencent.mm.opensdk.modelmsg.SendAuth;

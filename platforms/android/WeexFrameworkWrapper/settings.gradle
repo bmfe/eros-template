@@ -1,4 +1,4 @@
-include ':app',':sdk',':nexus', ':wxframework', ':erospluginamap',':erosplugingt',':erospluginwxpay',':erospluginwxshare'
+include ':app',':sdk',':nexus', ':wxframework', ':erospluginamap',':erosplugingt',':erospluginwxpay',':erospluginwxshare', ':erospluginum'
 
 // 基础库
 project(':wxframework').projectDir = new File(settingsDir,'/wxframework/eros-framework')
