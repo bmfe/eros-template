@@ -12,13 +12,7 @@ git clone https://github.com/bmfe/WeexErosFramework.git "wxframework"
 
 git clone https://github.com/bmfe/eros-nexus.git "nexus"
 
-git clone https://github.com/bmfe/eros-plugin-android-amap.git "ErosPluginAmap"
 
-git clone https://github.com/bmfe/eros-plugin-android-getui.git "erosplugingt"
-
-git clone https://github.com/bmfe/eros-plugin-android-wxpay.git "erospluginwxpay"
-
-git clone https://github.com/bmfe/eros-plugin-android-wxshare.git "erospluginumeng"
 
 cd ../
 
