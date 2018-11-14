@@ -15,7 +15,7 @@ module.exports = {
         'navItemColor': '#ffffff'
     },
     'url': {
-        'image': 'https://lev-inf.benmu-health.com/test/xxx',
+        'image': 'https://www.weex.eros/test/xxx',
         'bundleUpdate': 'http://localhosts:3001/app/check'
     },
     'zipFolder': {
