@@ -206,11 +206,11 @@
 				"${PODS_ROOT}/ErosPluginBaseLibrary/Source/BMWeexExtension/Resources/bm-base.js",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
-				"${PODS_ROOT}/WeexSDK/pre-build/native-bundle-main.js",
-				"${PODS_ROOT}/WeexSDK/pre-build/weex-main-jsfm.js",
-				"${PODS_ROOT}/WeexSDK/pre-build/weex-polyfill.js",
-				"${PODS_ROOT}/WeexSDK/pre-build/weex-rax-api.js",
-				"${PODS_ROOT}/WeexSDK/ios/sdk/WeexSDK/Resources/wx_load_error@3x.png",
+				"${PODS_ROOT}/WeexSDK/WeexSDK/Resources/native-bundle-main.js",
+				"${PODS_ROOT}/WeexSDK/WeexSDK/Resources/weex-main-jsfm.js",
+				"${PODS_ROOT}/WeexSDK/WeexSDK/Resources/weex-polyfill.js",
+				"${PODS_ROOT}/WeexSDK/WeexSDK/Resources/weex-rax-api.js",
+				"${PODS_ROOT}/WeexSDK/WeexSDK/Resources/wx_load_error@3x.png",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
