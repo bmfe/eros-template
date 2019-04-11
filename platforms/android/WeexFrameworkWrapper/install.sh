@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 echo "开始更新依赖库"
-rm -r wxframework/
-rm -r sdk/
-rm -r nexus/
-rm -r ErosPluginAmap/
-rm -r erosplugingt/
-rm -r erospluginwxpay/
-rm -r erospluginumeng/
+rm -rf wxframework/
+rm -rf sdk/
+rm -rf nexus/
+rm -rf ErosPluginAmap/
+rm -rf erosplugingt/
+rm -rf erospluginwxpay/
+rm -rf erospluginumeng/
 
 git clone https://github.com/bmfe/WeexErosFramework.git "wxframework"
 
